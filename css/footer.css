@@ -1,0 +1,62 @@
+.footer {
+  background: #000;
+  color: #fff;
+}
+.footer .container {
+  grid-template-columns: 1fr 1fr;
+  padding: 120px 20px 60px 20px;
+  align-items: center;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #ccc;
+}
+
+.footer-contato li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.footer-contato li a {
+  color: #fff;
+}
+
+.footer-linkedin {
+  position: relative;
+}
+.footer-linkedin::before {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../img/linkedin.svg) no-repeat center center;
+  position: absolute;
+  right: 0px;
+  top: 6px;
+}
+
+.footer-copy {
+  font-size: 1.125rem;
+  color: #8f8f8f;
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .footer-linkedin::before {
+    width: 25px;
+    height: 25px;
+    top: 3px;
+  }
+  .footer .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+}
